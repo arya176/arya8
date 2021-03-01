@@ -1,0 +1,121 @@
+                    @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap');
+                    * {
+                        box-sizing: border-box;
+                        margin: 0;
+                        padding: 0;
+                        text-decoration: none;
+                    }
+                    
+                    html {
+                        color: #fff;
+                        min-height: 100%;
+                        background-image: url('../images/main.jpeg');
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        background-attachment: fixed;
+                    }
+                    /* overlay */
+                    
+                    .overlay {
+                        height: 100%;
+                        width: 0;
+                        position: fixed;
+                        z-index: 1;
+                        top: 0;
+                        left: 0;
+                        background-color: rgb(0, 0, 0);
+                        background-color: rgba(0, 0, 0, 0.95);
+                        overflow-x: hidden;
+                        transition: 0.6s;
+                    }
+                    
+                    .overlay-content {
+                        position: relative;
+                        top: 25%;
+                        width: 100%;
+                        text-align: center;
+                        margin-top: 30px;
+                    }
+                    
+                    .overlay a {
+                        padding: 8px;
+                        text-decoration: none;
+                        font-size: 25px;
+                        color: #818181;
+                        display: block;
+                        transition: 0.3s;
+                    }
+                    
+                    .overlay a:hover,
+                    .overlay a:focus {
+                        color: #f1f1f1;
+                    }
+                    
+                    .overlay .closebtn {
+                        position: absolute;
+                        top: 20px;
+                        right: 45px;
+                        font-size: 30px;
+                    }
+                    /* finish overlay */
+                    
+                    .logo {
+                        width: max-content;
+                        margin: 380px auto;
+                        font-family: 'DM Serif Text', serif;
+                        font-weight: bold;
+                        font-size: 5rem;
+                        letter-spacing: -.5rem;
+                        z-index: 100;
+                    }
+                    
+                    .logo:hover {
+                        cursor: pointer;
+                        color: #fffeee;
+                    }
+                    
+                    .logo hr {
+                        width: 100%;
+                    }
+                    
+                    hr {
+                        border: none;
+                        height: 20px;
+                        width: 90%;
+                        height: 50px;
+                        margin-top: 0;
+                        border-bottom: 1px solid #cdd0cb;
+                        box-shadow: 0 20px 20px -20px #FFFCFF;
+                        margin: -50px auto 10px;
+                        margin-bottom: 40px;
+                    }
+                    
+                    .footer {
+                        font-size: .2rem;
+                        padding-left: 5px;
+                        padding-bottom: 10px;
+                        color: #010101;
+                        position: fixed;
+                        left: 10px;
+                        bottom: 5px;
+                        z-index: -10;
+                    }
+                    
+                    @media (max-width: 600px) {
+                        .overlay a {
+                            font-size: 15px
+                        }
+                        .overlay {
+                            font-size: 15px;
+                            top: 0px;
+                            right: 35px;
+                        }
+                        .closebtn {
+                            font-size: 15px;
+                            top: 15px;
+                            right: 35px;
+                        }
+                    }
+                    
+                    @media (min-width: 600px) {}
